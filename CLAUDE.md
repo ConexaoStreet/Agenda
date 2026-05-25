@@ -1,0 +1,18 @@
+# Lupy Nails - Regras do Projeto
+- Projeto mobile-only.
+- Não criar desktop.
+- Não criar área pública para clientes.
+- Não criar agendamento público.
+- Usar branco, lilás e roxo como identidade principal.
+- Usar GSAP, ScrollTrigger, Lenis e Framer Motion.
+- Toda animação precisa ser suave, premium e intencional.
+- Toda entrada/saída visual deve ter no mínimo 0.6s.
+- Priorizar Android e iPhone.
+- Respeitar safe area.
+- Interface deve parecer app privado premium.
+- O cliente nunca acessa a agenda.
+- A agenda é somente para a dona da Lupy Nails.
+- Valores dos serviços devem ser preenchidos pela dona.
+- Horários de trabalho devem ser configurados pela dona.
+- Não fixar preços.
+- Não fixar rotina de trabalho.
