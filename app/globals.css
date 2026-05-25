@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html,body{margin:0;padding:0;background:#FDFBFF;color:#1F1235;font-family:Inter,system-ui,sans-serif}
+body{max-width:480px;margin:0 auto;min-height:100vh;overflow-x:hidden}
+.safe-top{padding-top:env(safe-area-inset-top)}
+.safe-bottom{padding-bottom:env(safe-area-inset-bottom)}
+.glass{background:rgba(255,255,255,.75);backdrop-filter:blur(14px);border:1px solid rgba(124,58,237,.18);box-shadow:0 12px 40px rgba(124,58,237,.22)}
