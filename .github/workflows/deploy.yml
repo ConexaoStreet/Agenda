@@ -23,8 +23,20 @@ jobs:
       NEXT_PUBLIC_BASE_PATH: /Agenda
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Manual checkout with retry
+        run: |
+          for i in 1 2 3 4 5; do
+            echo "Tentativa $i de clonar o repositório..."
+            git clone --depth 1 --branch main https://github.com/ConexaoStreet/Agenda.git .
+            if [ $? -eq 0 ]; then
+              echo "Repositório clonado com sucesso."
+              exit 0
+            fi
+            echo "Falhou. Tentando novamente em 10 segundos..."
+            sleep 10
+          done
+          echo "Não foi possível clonar o repositório."
+          exit 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
